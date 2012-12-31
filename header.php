@@ -92,10 +92,10 @@
 		<header role="banner">
 		
 			<div id="inner-header" class="clearfix">
-				
-				<div class="navbar navbar-fixed-top">
-					<div class="navbar-inner">
-						<div class="container-fluid nav-container">
+          
+        <div class="container-fluid nav-container">
+          <div class="navbar navbar-fixed-top">
+            <div class="navbar-inner">
 							<nav role="navigation">
 								<a class="brand" id="logo" title="<?php echo get_bloginfo('description'); ?>" href="<?php echo home_url(); ?>"><?php bloginfo('name'); ?></a>
 								

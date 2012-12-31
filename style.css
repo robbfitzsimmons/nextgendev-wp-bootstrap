@@ -1,10 +1,10 @@
 /*
-Theme Name: wp-bootstrap
+Theme Name: NextGen Bootstrap
 Theme URI: http://320press.com/wpbs
-Description: A simple responsive theme based on the Bootstrap framework. Includes multiple page templates, two different sidebars and a theme options panel.
-Version: 2.1
-Author: 320press
-Author URI: http://320press.com
+Description: A responsive, minimal wordpress theme based on the Wordpress-Bootstrap work of 320press.
+Version: 0.1
+Author: Robb Fitzsimmons
+Author URI: http://github.com/robbfitzsimmons
 Tags: black, white, one-column, two-columns, flexible-width, custom-background, custom-colors, custom-menu, full-width-template, theme-options
 License: GNU General Public License v2.0 & Apache License 2.0
 License URI: http://www.gnu.org/licenses/gpl-2.0.html http://www.apache.org/licenses/LICENSE-2.0
@@ -44,6 +44,15 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html http://www.apache.org/lice
 	
 }
 
+/* specific to NextGen layout */
+
+#nextgen-footer-logo{
+  width: 100px;
+  float: right;
+  margin-top: -60px;
+  margin-right: 60px;
+}
+
 /* layout */
 
 body{
@@ -57,14 +66,19 @@ body.admin-bar .navbar-fixed-top{
 }
 
 .navbar .brand{
-	color: #000 !important;
+	color: #fff !important;
+  font-family: Copperplate, Copperplate Gothic Light, sans-serif;
 	text-shadow: 0 1px 0 rgba(255, 255, 255, 0.1), 0 0 30px rgba(255, 255, 255, 0.125);
 	font-weight: bold !important;
+  margin: 0px;
 }
 
 .nav-container{
 	padding-left: 0;
 	padding-right: 0;
+}
+
+.navbar-inner{
 }
 
 #inner-header{
@@ -96,8 +110,10 @@ input, textarea, select, .uneditable-input {
 }
 
 .footer-links{
-	float: right;
+	float: left;
+	margin-left: 25px;
 	margin-bottom: 18px;
+	text-decoration: none;
 }
 
 .footer-links .menu{
@@ -108,6 +124,11 @@ input, textarea, select, .uneditable-input {
 .footer-links .menu li{
 	float: left;
 	margin-left: 10px;
+}
+
+.footer-links .menu li a{
+	color: #B7B296 !important;
+	text-decoration: none !important;
 }
 
 /* post styling */
@@ -148,6 +169,17 @@ input, textarea, select, .uneditable-input {
 
 p.tags{
 	line-height: 20px;
+}
+
+p.attribution{
+	color: #b7b296;
+	padding-left: 10px;
+	margin-left: 25px;
+}
+
+p.pull-right{
+	margin-right: 55px;
+	padding-right: 10px;
 }
 
 div[id*='attachment_']{
@@ -425,17 +457,48 @@ li.previous a:hover:before{
 
 /* widget styles */
 
+@media screen and (max-width: 1024px) {
+	.widget {
+		display: none !important;
+	}
+}
+
 .widget{
 	margin-bottom: 18px;
 }
 
 .widgettitle{
-	margin-bottom: 9px;
+	color: #c1d72f;
+	font-size: 60px;
+	font-weight: 100;
+	font-family: ‘Arial Narrow’, sans-serif;
+	margin-bottom: 25px;
+  margin-left: 20px;
+}
+
+.widget_recent_entries ul {
+	list-style-type: none;
+}
+
+.widget_recent_entries li {
+	margin-bottom: 20px;
+	padding-bottom: 10px;
+	border-bottom: 5px dotted #c1d72f;
+}
+
+.widget_recent_entries a {
+	color: #333133;
+	font-weight: 100;
+	text-decoration: none;
 }
 
 #tag-cloud{
 	margin-bottom: 18px;
 	line-height: 160%;
+}
+
+#widget-footer{
+  margin-top: 20px;
 }
 
 /* for some reason the bs version currently available for download doesn't have this style */
@@ -517,17 +580,19 @@ blockquote.pull-left{
 	.container-fluid{
 		max-width: 970px;
 		margin: 0 auto;
-		padding-left: 20px;
-		padding-right: 20px;
+		background-color: #67652f;	
 	}
 	
 	#inner-footer{
+		background-color: #67652f;
 		padding: 0;
 	}
 	
 	#content{
 		padding-left: 0;
 		padding-right: 0;
+		background-color: #ffffff;
+    border-bottom-left-radius: 75px;
 	}
 	
 	.topbar-inner{

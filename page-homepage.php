@@ -94,13 +94,13 @@ Template Name: Homepage
 						
 						<section class="row-fluid post_content">
 						
+							<?php get_sidebar('sidebar2'); // sidebar 2 ?>
+
 							<div class="span8">
 						
 								<?php the_content(); ?>
 								
 							</div>
-							
-							<?php get_sidebar('sidebar2'); // sidebar 2 ?>
 													
 						</section> <!-- end article header -->
 						

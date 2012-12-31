@@ -1,7 +1,10 @@
 			<footer role="contentinfo">
 			
+				<div id="nextgen-footer-logo" class="pull-right">
+					<img src="<?php bloginfo('template_directory'); ?>/images/ngd_logo.png"/>
+				</div>
+				
 				<div id="inner-footer" class="clearfix">
-		          <hr />
 		          <div id="widget-footer" class="clearfix row-fluid">
 		            <?php if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar('footer1') ) : ?>
 		            <?php endif; ?>
@@ -15,9 +18,11 @@
 						<?php bones_footer_links(); // Adjust using Menus in Wordpress Admin ?>
 					</nav>
 					
-					<p class="pull-right"><a href="http://320press.com" id="credit320" title="By the dudes of 320press">320press</a></p>
+					<p class="pull-right">
+						<a href="#" id="linkedin"><img src="<?php bloginfo('template_directory'); ?>/images/linkedin" style="width: 25px"/></a>
+          </p>
 			
-					<p class="attribution">&copy; <?php bloginfo('name'); ?></p>
+					<p class="attribution">&copy; 2012 Next Generation Development. All rights reserved.</p>
 				
 				</div> <!-- end #inner-footer -->
 				
