@@ -19,7 +19,7 @@
 					</nav>
 					
 					<p class="pull-right">
-						<a href="http://us.linkedin.com/company/next-generation-development-llc" id="linkedin"><img src="<?php bloginfo('template_directory'); ?>/images/linkedin.png" style="width: 25px"/></a>
+						<a href="http://us.linkedin.com/company/next-generation-development-llc" id="linkedin"><img src="<?php bloginfo('template_directory'); ?>/images/linkedin.png" style="width: 35px"/></a>
           </p>
 			
 					<p class="attribution">&copy; 2012 Next Generation Development. All rights reserved.</p>
