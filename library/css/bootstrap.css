@@ -478,7 +478,7 @@ a:hover {
   clear: both;
 }
 p {
-  margin: 0 0 10px;
+  margin: 0 20px 10px;
 }
 .lead {
   margin-bottom: 20px;
@@ -4715,6 +4715,7 @@ a.badge:hover {
 }
 .carousel {
   position: relative;
+  margin-top: -10px;
   margin-bottom: 20px;
   line-height: 1;
 }
@@ -4802,12 +4803,15 @@ a.badge:hover {
   bottom: 0;
   padding: 15px;
   background: #333333;
-  background: rgba(0, 0, 0, 0.75);
+  background: rgba(0, 0, 0, 0.60);
 }
 .carousel-caption h4,
-.carousel-caption p {
+.carousel-caption p,
+.carousel-caption a {
   color: #ffffff;
   line-height: 20px;
+  text-decoration: none;
+  font-family: Copperplate, Copperplate Gothic Light; sans-serif;
 }
 .carousel-caption h4 {
   margin: 0 0 5px;
@@ -4816,8 +4820,6 @@ a.badge:hover {
   margin-bottom: 0;
 }
 .hero-unit {
-  padding: 60px;
-  margin-bottom: 30px;
   background-color: #eeeeee;
 }
 .hero-unit h1 {

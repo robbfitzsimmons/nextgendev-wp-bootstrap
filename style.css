@@ -53,6 +53,27 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html http://www.apache.org/lice
   margin-right: 60px;
 }
 
+#menu-sidebar ul {
+  margin: 0 0 10px 25px;
+}
+
+#menu-sidebar li {
+  list-style-type: none;  
+  border-bottom: 5px dotted #C1D72F; 
+  margin-bottom: 20px;
+  padding-bottom: 10px;
+}
+
+#menu-sidebar a {
+  color: #333133;
+  font-weight: 100;
+  text-decoration: none;
+}
+
+.property-columns {
+  margin: 0 20px 10px;
+ }
+
 /* layout */
 
 body{
@@ -68,8 +89,6 @@ body.admin-bar .navbar-fixed-top{
 .navbar .brand{
 	color: #fff !important;
   font-family: Copperplate, Copperplate Gothic Light, sans-serif;
-	text-shadow: 0 1px 0 rgba(255, 255, 255, 0.1), 0 0 30px rgba(255, 255, 255, 0.125);
-	font-weight: bold !important;
   margin: 0px;
 }
 
@@ -465,6 +484,7 @@ li.previous a:hover:before{
 
 .widget{
 	margin-bottom: 18px;
+  margin-top: 20px;
 }
 
 .widgettitle{

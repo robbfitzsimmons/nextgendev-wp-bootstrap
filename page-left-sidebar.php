@@ -5,6 +5,12 @@ Template Name: Left Sidebar Page
 ?>
 
 <?php get_header(); ?>
+
+        <div class="hero-unit" style="background-image: url('<?php echo $featured_src; ?>'); background-repeat: no-repeat; background-position: 0 0;">
+
+          <?php the_post_thumbnail( 'wpbs-featured-home' ); ?>
+
+        </div>
 			
 			<div id="content" class="clearfix row-fluid">
             
@@ -14,14 +20,15 @@ Template Name: Left Sidebar Page
 
 					<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 					
+            
 					<article id="post-<?php the_ID(); ?>" <?php post_class('clearfix'); ?> role="article">
 						
-						<header>
+            <header>
 							
 							<div class="page-header"><h1><?php the_title(); ?></h1></div>
 						
-						</header> <!-- end article header -->
-					
+						</header>
+
 						<section class="post_content">
 							<?php the_content(); ?>
 					
@@ -34,8 +41,6 @@ Template Name: Left Sidebar Page
 						</footer> <!-- end article footer -->
 					
 					</article> <!-- end article -->
-					
-					<?php comments_template(); ?>
 					
 					<?php endwhile; ?>	
 					

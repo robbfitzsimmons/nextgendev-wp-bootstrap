@@ -26,7 +26,7 @@ Template Name: Homepage
 							global $post;
 							$tmp_post = $post;
 							$show_posts = of_get_option('slider_options');
-							$args = array( 'numberposts' => $show_posts ); // set this to how many posts you want in the carousel
+							$args = array( 'numberposts' => $show_posts, 'order' => 'ASC', 'orderby' => 'post_date' ); // set this to how many posts you want in the carousel
 							$myposts = get_posts( $args );
 							$post_num = 0;
 							foreach( $myposts as $post ) :	setup_postdata($post);
@@ -47,9 +47,8 @@ Template Name: Homepage
 					                		$the_excerpt = get_the_excerpt(); 
 					                		if($the_excerpt != ""){
 					                			$the_excerpt = substr( $the_excerpt, 0, $excerpt_length );
-					                			echo $the_excerpt . '... ';
+					                			echo $the_excerpt ;
 					                	?>
-					                	<a href="<?php the_permalink() ?>" rel="bookmark" title="<?php the_title_attribute(); ?>" class="btn btn-primary">Read more &rsaquo;</a>
 					                	<?php } ?>
 					                </p>
 
@@ -72,31 +71,18 @@ Template Name: Homepage
 					
 					<article id="post-<?php the_ID(); ?>" <?php post_class('clearfix'); ?> role="article">
 					
-						<header>
-
-							<?php 
-								$post_thumbnail_id = get_post_thumbnail_id();
-								$featured_src = wp_get_attachment_image_src( $post_thumbnail_id, 'wpbs-featured-home' ); 
-								// not sure why this isn't working yet
-							?>
-						
-							<div class="hero-unit" style="background-image: url('<?php echo $featured_src; ?>'); background-repeat: no-repeat; background-position: 0 0;">
-
-								<?php the_post_thumbnail( 'wpbs-featured-home' ); ?>
-
-								<h1><?php the_title(); ?></h1>
-								
-								<?php echo get_post_meta($post->ID, 'custom_tagline' , true);?>
-							
-							</div>
-
-						</header>
 						
 						<section class="row-fluid post_content">
 						
 							<?php get_sidebar('sidebar2'); // sidebar 2 ?>
 
 							<div class="span8">
+
+                <header>
+
+                  <div class="page-header"><h1><?php the_title(); ?></h1></div>
+
+                </header>
 						
 								<?php the_content(); ?>
 								
