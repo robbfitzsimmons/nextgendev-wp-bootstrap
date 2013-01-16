@@ -1,6 +1,6 @@
-			<footer role="contentinfo" class="hidden-phone">
+			<footer role="contentinfo" >
 			
-				<div id="nextgen-footer-logo" class="pull-right">
+				<div id="nextgen-footer-logo" class="pull-right hidden-phone">
 					<img src="<?php bloginfo('template_directory'); ?>/images/ngd_logo.png"/>
 				</div>
 				
@@ -18,11 +18,11 @@
 						<?php bones_footer_links(); // Adjust using Menus in Wordpress Admin ?>
 					</nav>
 					
-					<p class="pull-right">
+					<p class="pull-right hidden-phone">
 						<a href="http://us.linkedin.com/company/next-generation-development-llc" id="linkedin"><img src="<?php bloginfo('template_directory'); ?>/images/linkedin.png" style="width: 35px"/></a>
           </p>
 			
-					<p class="attribution">&copy; 2012 Next Generation Development. All rights reserved.</p>
+					<p class="attribution hidden-phone">&copy; 2012 Next Generation Development. All rights reserved.</p>
 				
 				</div> <!-- end #inner-footer -->
 				

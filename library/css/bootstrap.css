@@ -478,6 +478,7 @@ a:hover {
   clear: both;
 }
 p {
+  text-align: justify;
   margin: 0 20px 10px;
 }
 .lead {
