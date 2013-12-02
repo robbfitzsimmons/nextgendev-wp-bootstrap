@@ -4815,7 +4815,7 @@ a.badge:hover {
   font-family: Copperplate, Copperplate Gothic Light; sans-serif;
 }
 .carousel-caption h4 {
-  margin: 0 0 5px;
+  margin: 0 0 5px 20px;
 }
 .carousel-caption p {
   margin-bottom: 0;
