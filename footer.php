@@ -23,7 +23,7 @@
           	<a href="http://us.linkedin.com/company/next-generation-development-llc" id="linkedin"><img src="<?php bloginfo('template_directory'); ?>/images/linkedin.png" style="width: 35px"/></a>
           </p>
 
-					<p class="attribution hidden-phone">&copy; 2012 Next Generation Development. All rights reserved.</p>
+					<p class="attribution hidden-phone">&copy; 2013 Next Generation Development. All rights reserved.</p>
 
 				</div> <!-- end #inner-footer -->
 
